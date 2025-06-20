@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>油そばページ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <nav>
+            <ul>
+                <li><a href="yusoba.html">油そば</a></li>
+                <li><a href="ramen.html">ラーメン</a></li>
+                <li><a href="pasta.html">パスタ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>好きな油そば紹介</h1>
