@@ -1,69 +1,50 @@
 body {
-    margin: 0;
     font-family: sans-serif;
-}
-
-#main-header.show {
-    transform: translateY(0); /* 表示状態 */
-}
-
-#main-header nav ul {
-    list-style: none;
-    padding: 0;
+    /* display: flex; を削除またはコメントアウト */
+    /* body全体の余白をリセットするなら */
     margin: 0;
-    display: flex;
-    justify-content: space-around;
 }
 
-#main-header nav ul li {
-    padding: 15px 20px;
-}
-
-#main-header nav ul li a {
-    text-decoration: none;
-    color: #337ab7; /* 青文字 */
-    font-weight: bold;
-    font-size: 1.1em;
-}
-
-#main-header nav ul li a:hover {
-    color: #0056b3;
-}
-
-/* メインコンテンツのパディング */
 main {
-    padding-top: 70px; /* ヘッダーの高さに合わせて調整 */
-    max-width: 960px;
-    margin: 20px auto;
+    padding-top: 70px;
+    max-width: 960px; 
+    margin: 20px auto; 
     padding-left: 20px;
     padding-right: 20px;
 }
 
+
 h1 {
-    text-align: center;
+    text-align: center; 
     margin-bottom: 30px;
+    padding-top: 20px; 
 }
 
 .pasta-item {
     border: 1px solid #eee;
-    padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
-.pasta-item h2 {
-    color: #333;
-    margin-top: 0;
-    margin-bottom: 15px;
+h2{
+    margin:  0px; ;
+    text-align: center;
 }
 
 .pasta-details {
     display: flex;
-    gap: 20px;
     align-items: flex-start;
 }
 
-body {
+.pasta-image-placeholder {
+    width: 200px;
+    height: 150px;
+    background-color: #f0f0f0;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    border: 1px dashed #ccc;
+    flex-shrink: 0;
 }
