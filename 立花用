@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>油そばページ</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="立花.css">
 </head>
 
 <body>
@@ -20,3 +20,37 @@
     </header>
     <main>
         <h1>好きな油そば紹介</h1>
+        <div class="item-section">
+            <h2 class="item-title">東京油組総本店</h2>
+            <div class="item-details">
+                <div class="item-image-placeholder">
+                    <img src="./写真/image0 (2).jpeg" alt="東京油組総本店の写真" loading="lazy">
+
+                </div>
+                <div class="item-info" \>
+                    <ul>
+                        <li>値段：880円</li>
+                        <li>おすすめポイント：どのサイズを選んでも同じ値段、汁なしだからヘルシー、ラー油やお酢の量を調節したり、玉ねぎや半熟卵などをトッピングできる
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="knowledge-section">
+            <h2 class="section-title">油そばの豆知識</h2>
+            <p class="knowledge-description">ラーメン屋さんの従業員が、残った麺をスープに入れず、タレと油で和えて食べたのが始まりという説もある</p>
+        </div>
+        <div class="review-section">
+            <h2 class="section-title">よくある質問</h2>
+            <P>Q.まぜそばとは何が違うんですか？</P>
+            <P>A.まぜそばは味付けや具材の種類が幅広く、スパイシーや魚介風などバリエーションが多いのに対し、油そばは基本的にしょうゆベースのタレと油でシンプルに味わうことが多いところです</P>
+            <P>Q.油そばにはどんなトッピングが合いますか？</P>
+            <P>A.定番トッピングはチャーシュー、メンマ、ネギ、のり、メンマ、なると、味玉などです。 されに、フライドオニオン・キムチ・納豆・チーズも合います。</P>
+            <P>Q.カロリーはラーメンと比べて低いですか？</P>
+            <P>A.少し低いです。ただし、トッピングの量によってはQカロリーは大きく変動するので、要注意！</P>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

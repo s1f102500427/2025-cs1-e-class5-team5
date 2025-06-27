@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#main-header {
+    background-color: #F8F8F8;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out;
+}
+
+.img1 {
+    top: 500px;
+    left: 200px;
+    width: 0px;
+}
+
+#main-header.show {
+    transform: translateY(0);
+}
+
+#main-header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#main-header nav ul li {
+    padding: 15px 20px;
+}
+
+#main-header nav ul li a {
+    text-decoration: none;
+    color: #337AB7;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#main-header nav ul li a:hover {
+    color: #0056B3;
+}
+
+main {
+    padding-top: 70px;
+    /* ヘッダーの高さに合わせて調整 */
+    max-width: 960px;
+    margin: 20px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* --- 油そばページ固有のスタイル --- */
+.item-section {
+    background-color: #F0F0F0;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 0px;
+    /* ←ここを20px→40px\\など好みで大きく */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.knowledge-section {
+    background-color: #F0F0F0;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    /* ←ここを追加。上の余白で調整 */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.review-section {
+    background-color: #F0F0F0;
+    /* ワイヤーフレームの灰色の背景 */
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    /* 各セクション間の余白 */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.item-title,
+.section-title {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.item-details {
+    display: flex;
+    gap: 20px;
+    /* 写真と情報の間のスペース */
+    align-items: flex-start;
+    /* 上端を揃える */
+}
+
+.item-image-placeholder {
+    width: 300px;
+    /* 写真の幅 */
+    height: 300px;
+    /* 写真の高さ */
+    background-color: #E0E0E0;
+    /* より明るいグレーで写真のプレースホルダー */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    border: 1px dashed #aaa;
+    /* 点線ボーダー */
+    flex-shrink: 0;
+    /* 縮まないようにする */
+}
+
+.item-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-info ul li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.knowledge-description {
+    background-color: #fff;
+    /* ワイヤーフレームの白い背景 */
+    border: 1px solid #ddd;
+    padding: 10px;
+    min-height: 50px;
+    /* 最小の高さ */
+    color: #333;
+}
