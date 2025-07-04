@@ -6,43 +6,67 @@
     <title>ウェブサイト</title>
     <link rel="stylesheet" href="../css/pasta.css">
 </head>
-    <body>
-        <main>
-            <h1>好きなパスタ3選</h1>
+<body>
+    <header>
+        <nav>
+            <ul class="noodle-menu">
+                <li class="menu-item">
+                    <a href="#">油そば</a>
+                    <ul class="submenu">
+                        <li><a href="http://127.0.0.1:3000/立花用.html" class="sub-link">油そばサイト</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#">ラーメン</a>
+                    <ul class="submenu">
+                        <li><a href="http://127.0.0.1:3000/pasta/ramen.html" class="sub-link">ラーメンサイト</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="./index.html" class="active">パスタ</a> <ul class="submenu">
+                        <li><a href="http://127.0.0.1:3000/pasta/pasta.html" class="sub-link">パスタサイト</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-            <div class="pasta-item-block">
+    <main>
+        <h1>好きなパスタ3選</h1>
+
+        <div class="pasta-item-block">
             <h2 class="pasta-name">サイゼリヤ スープ入り塩味ボンゴレ</h2>
-                <div class="pasta-details">
-                    <ul>
-                        <li>500円</li>
-                        <li>アサリの旨味があっさりとした塩味のスープの中に溶け込んでいて、とても優しい味わいのボンゴレパスタです。</li>
-                    </ul>
-                </div>
-                <img src="./images/Saizeriya.png" alt="アサリがおいしくあっさりとした塩味のスープ" class="image-position1">
+            <div class="pasta-details">
+                <ul>
+                    <li>500円</li>
+                    <li>アサリの旨味があっさりとした塩味のスープの中に溶け込んでいて、とても優しい味わいのボンゴレパスタです。</li>
+                </ul>
             </div>
+            <img src="./images/Saizeriya.png" alt="アサリがおいしくあっさりとした塩味のスープ" class="image-position1">
+        </div>
 
-            <div class="pasta-item-block">
+        <div class="pasta-item-block">
             <h2 class="pasta-name">五右衛門 タコのペペロンチーノ</h2>
-                <div class="pasta-details">
-                    <ul>
-                        <li>980円</li>
-                        <li>新鮮で食べ応えのあるタコがふんだんに使われており、にんにくの香ばしさ、唐辛子の辛さがマッチしている和風ベースのパスタです。</li>
-                    </ul>
-                </div>
-            <img src="./images/Goemon.png" alt="" class="image-position2">
-            </div>    
-
-            <div class="pasta-item-block">
-            <h2 class="pasta-name">ピエトロ まるごとおいしい海老のトマトクリームソース</h2>
-                <div class="pasta-details">
-                    <ul>
-                        <li>レギュラー 1,518円 / スモール 1,067円</li>
-                        <li>ソースに海老の旨味が凝縮されており、トマトクリームソースはくどくなく、えびがゴロゴロと入っており海老好きにはたまらない一品です。</li>
-                    </ul>
-                </div>
-                <img src="./images/pietoro.png" alt="" class="pietoro">
+            <div class="pasta-details">
+                <ul>
+                    <li>980円</li>
+                    <li>新鮮で食べ応えのあるタコがふんだんに使われており、にんにくの香ばしさ、唐辛子の辛さがマッチしている和風ベースのパスタです。</li>
+                </ul>
             </div>
+            <img src="./images/Goemon.png" alt="" class="image-position2">
+        </div>    
 
-        </main>    
-    </body>
+        <div class="pasta-item-block">
+            <h2 class="pasta-name">ピエトロ まるごとおいしい海老のトマトクリームソース</h2>
+            <div class="pasta-details">
+                <ul>
+                    <li>レギュラー 1,518円 / スモール 1,067円</li>
+                    <li>ソースに海老の旨味が凝縮されており、トマトクリームソースはくどくなく、えびがゴロゴロと入っており海老好きにはたまらない一品です。</li>
+                </ul>
+            </div>
+            <img src="./images/pietoro.png" alt="" class="pietoro">
+        </div>
+
+    </main>    
+</body>
 </html>
