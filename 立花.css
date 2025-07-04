@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     font-family: sans-serif;
 }
@@ -136,4 +136,139 @@ h1 {
 .item-info ul li {
     margin-bottom: 8px;
     color: #333;
+} */
+
+/* 既存のbodyとheaderスタイルはそのまま */
+body {
+    margin: 0;
+    font-family: sans-serif;
 }
+
+#main-header {
+    background-color: #F8F8F8;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* transform: translateY(-100%); */ /* ヘッダーを常に表示するならこの行はコメントアウトまたは削除 */
+    /* transition: transform 0.3s ease-out; */ /* 上記と同様、常に表示するなら不要 */
+}
+
+/* ヘッダーの表示/非表示をJavaScriptで制御している場合のみ残す */
+/* #main-header.show {
+    transform: translateY(0);
+} */
+
+/* 既存のナビゲーションスタイルを、ドロップダウンメニュー用に調整 */
+#main-header nav ul.noodle-menu { /* クラス名を追加 */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#main-header nav ul.noodle-menu li.menu-item { /* クラス名を追加 */
+    /* padding: 15px 20px; */ /* paddingは中のaタグに設定するためここでは削除 */
+    position: relative; /* サブメニューの配置基準にする */
+}
+
+#main-header nav ul.noodle-menu li.menu-item a { /* クラス名を追加 */
+    text-decoration: none;
+    color: #337AB7;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 15px 20px; /* ここでパディングを設定 */
+    display: block; /* クリック領域を広げる */
+}
+
+#main-header nav ul.noodle-menu li.menu-item a:hover { /* クラス名を追加 */
+    color: #0056B3;
+}
+
+/* 現在のページを示すリンクのスタイル */
+#main-header nav ul.noodle-menu li.menu-item a.active {
+    color: #0000ff; /* 例: 現在のページの項目を青くする */
+    /* text-decoration: underline; */ /* 下線を追加するなどの強調も可 */
+}
+
+
+/* --- ここからドロップダウンメニュー用のCSSの追加 --- */
+
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* ★デフォルトで非表示 */
+    position: absolute; /* 親要素の.menu-itemを基準に配置 */
+    background-color: #fff; /* ドロップダウンの背景色 */
+    min-width: 180px; /* ドロップダウンの最小幅を少し広めに設定 */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1001; /* ヘッダーよりさらに手前に表示 */
+    left: 50%; /* 親要素の真ん中からサブメニューを開始 */
+    transform: translateX(-50%); /* サブメニュー自体を左に50%ずらして中央揃えにする */
+    top: 100%; /* 親要素の直下に配置 */
+    white-space: nowrap; /* テキストが途中で改行されないようにする */
+    border-radius: 0 0 5px 5px; /* 下部に角丸をつける */
+    overflow: hidden; /* 角丸からはみ出るコンテンツを隠す */
+}
+
+.submenu li a {
+    color: #0000ff; /* ★青い文字にする */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: normal; /* サブリンクは太字ではない方が自然 */
+    font-size: 1em; /* サブリンクのフォントサイズ */
+}
+
+.submenu li a:hover {
+    background-color: #f1f1f1; /* マウスを合わせたときの背景色 */
+}
+
+/* ★ここが重要！メニュー項目にマウスを合わせたときにサブメニューを表示する */
+.menu-item:hover .submenu {
+    display: block; /* マウスを合わせたら表示する */
+}
+
+/* --- ここまでドロップダウンメニュー用のCSS --- */
+
+
+/* mainのpadding-topを調整 */
+main {
+    padding-top: 70px; /* ヘッダーの高さ（約70px）に合わせて調整。必要なら増やす */
+    max-width: 960px;
+    margin: 20px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* 既存の油そばページ固有のスタイルはそのまま */
+.img1 {
+    /* position: absolute; を追加しないと top/left は効きません。*/
+    /* 親要素に対して相対的に配置したい場合、親要素に position: relative; を設定し、
+       この img1 に position: absolute; を設定します。
+       現在のコードでは .item-details の子要素なので、相対配置を検討するか、
+       top/left はコメントアウトするか削除し、flexboxやgridでレイアウトすることをおすすめします。
+       ここでは、一旦画像位置を調整しやすいように position: absolute; を追加しておきますが、
+       レイアウトが崩れる場合は調整が必要です。 */
+    position: absolute;
+    top: 200px; /* ヘッダーの高さとコンテンツの始まりに合わせて調整してください */
+    left: 20px;
+    width: 400px;
+}
+
+/* その他の既存スタイルはそのまま */
+.item-section {
+    background-color: #F0F0F0;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 0px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    position: relative; /* img1のposition:absoluteの基準にする */
+}
+/* ... 以下の既存CSSはそのまま ... */
