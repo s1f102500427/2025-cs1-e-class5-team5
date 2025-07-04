@@ -60,11 +60,11 @@ h1 {
 .image-position1 {
     position: absolute;
     /* 親要素 .container の左上を基準に配置 */
-    top: 300px;
+    top: 350px;
     /* 上から50px */
     left: 463px;
     /* 左から100px */
-    width: 200px;
+    width: 150px;
     /* 画像の幅 */
     height: auto;
     /* 高さは自動調整 */
@@ -79,7 +79,7 @@ h1 {
     /* 上から50px */
     left: 463px;
     /* 左から100px */
-    width: 200px;
+    width: 175px;
     /* 画像の幅 */
     height: auto;
     /* 高さは自動調整 */
@@ -90,7 +90,7 @@ h1 {
 .image-position3 {
     position: absolute;
     /* 親要素 .container の左上を基準に配置 */
-    top: 910px;
+    top: 825px;
     /* 上から50px */
     left: 463px;
     /* 左から100px */
@@ -101,3 +101,102 @@ h1 {
     z-index: 10;
     /* 他の要素より手前に表示 */
 }
+
+header {
+    width: 100%;
+    background-color: #f8f8f8;
+    /* ヘッダーの背景色 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* ヘッダーの影 */
+    position: fixed;
+    /* 画面の上部に固定する */
+    top: 0;
+    left: 0;
+    z-index: 100;
+    /* 他のコンテンツの上に表示されるようにする */
+}
+
+
+/* General styling for the menu (adjust as needed) */
+.noodle-menu {
+    list-style: none;
+    /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* Arrange items horizontally */
+    justify-content: space-around;
+    /* Distribute items evenly */
+    padding: 10px 0;
+}
+
+.menu-item {
+    position: relative;
+    /* Important for positioning the submenu */
+    text-align: center;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #333;
+    /* Default text color for main items */
+    padding: 10px 20px;
+    display: block;
+    font-weight: bold;
+}
+
+/* サブメニューが青くなるように調整（既存のaタグと競合しないように詳細度を上げるか、別のクラス名を推奨） */
+.menu-item a.active {
+    /* 現在のページを示すリンクのスタイル */
+    color: #0000ff;
+    /* 例: 現在のページの項目を青くする */
+}
+
+
+/* Submenu styling */
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    /* Hide submenu by default */
+    position: absolute;
+    /* Position relative to the parent .menu-item */
+    background-color: #fff;
+    /* Background for the dropdown */
+    min-width: 160px;
+    /* Adjust width as needed */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    /* Ensure it appears above other content */
+    left: 50%;
+    /* Center the submenu horizontally */
+    transform: translateX(-50%);
+    /* Adjust to truly center */
+    top: 100%;
+    /* Position below the parent item */
+    white-space: nowrap;
+    /* テキストが途中で改行されないようにする */
+}
+
+.submenu li a {
+    color: #0000ff;
+    /* Blue color for submenu links */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.submenu li a:hover {
+    background-color: #f1f1f1;
+    /* Highlight on hover */
+}
+
+/* Show the submenu on hover */
+.menu-item:hover .submenu {
+    display: block;
+    /* Show submenu when parent is hovered */
+}
+
+/* --- ここまでドロップダウンメニュー用のCSS --- */
