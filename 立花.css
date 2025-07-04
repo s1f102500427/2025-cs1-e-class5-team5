@@ -17,9 +17,9 @@ body {
 }
 
 .img1 {
-    top: 500px;
-    left: 200px;
-    width: 0px;
+    top: 80px;
+    left: 20px;
+    width: 400px;
 }
 
 #main-header.show {
@@ -111,9 +111,9 @@ h1 {
 }
 
 .item-image-placeholder {
-    width: 300px;
+    width: 80px;
     /* 写真の幅 */
-    height: 300px;
+    height: auto;
     /* 写真の高さ */
     background-color: #E0E0E0;
     /* より明るいグレーで写真のプレースホルダー */
