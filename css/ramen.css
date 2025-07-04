@@ -87,7 +87,7 @@ h1 {
     /* 他の要素より手前に表示 */
 }
 
-.pietoro {
+.image-position3 {
     position: absolute;
     /* 親要素 .container の左上を基準に配置 */
     top: 910px;
