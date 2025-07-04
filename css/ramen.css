@@ -1,0 +1,103 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+main {
+    padding-top: 70px;
+    max-width: 960px;
+    margin: 20px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.pasta-item-block {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    margin: 0 auto;
+}
+
+
+.pasta-name {
+    border: 1px solid #eee;
+    background-color: #f0f0f0;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.pasta-details {
+    background-color: #f0f0f0;
+    border: 1px solid #eee;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 300px;
+    margin-left: auto;
+}
+
+.pasta-details ul {
+    padding-left: 20px;
+}
+
+.pasta-details ul li {
+    margin-bottom: 5px;
+}
+
+.image-position1 {
+    position: absolute;
+    /* 親要素 .container の左上を基準に配置 */
+    top: 300px;
+    /* 上から50px */
+    left: 463px;
+    /* 左から100px */
+    width: 200px;
+    /* 画像の幅 */
+    height: auto;
+    /* 高さは自動調整 */
+    z-index: 10;
+    /* 他の要素より手前に表示 */
+}
+
+.image-position2 {
+    position: absolute;
+    /* 親要素 .container の左上を基準に配置 */
+    top: 580px;
+    /* 上から50px */
+    left: 463px;
+    /* 左から100px */
+    width: 200px;
+    /* 画像の幅 */
+    height: auto;
+    /* 高さは自動調整 */
+    z-index: 10;
+    /* 他の要素より手前に表示 */
+}
+
+.pietoro {
+    position: absolute;
+    /* 親要素 .container の左上を基準に配置 */
+    top: 910px;
+    /* 上から50px */
+    left: 463px;
+    /* 左から100px */
+    width: 200px;
+    /* 画像の幅 */
+    height: auto;
+    /* 高さは自動調整 */
+    z-index: 10;
+    /* 他の要素より手前に表示 */
+}
